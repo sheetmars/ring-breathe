@@ -2,13 +2,14 @@
 
 A small Arduino sketch that makes a 16-LED NeoPixel ring pulse red in a slow "breathing" pattern. It was my first project driving addressable LEDs, written in January 2024.
 
-<!-- Setup photo: images/setup.jpg -->
+![Board setup](images/setup.jpg)
 
 ## Hardware
 
 - Arduino Uno
 - 16-pixel WS2812 (NeoPixel) ring
-- Data in → pin 6, 5 V → 5 V, GND → GND
+- 560 Ω resistor in series on the data line
+- Data in → pin 6 (through the resistor), 5 V → 5 V, GND → GND
 
 ## How it works
 
